@@ -40,6 +40,7 @@ def update_model_stats(stats_file, params, results):
 def run_experiment(evaluator, params, stats_file):
     import time
     
+    params = init_params(params)
     start = time.time()
     scores = evaluator(params)
     exec_time = time.time() - start
@@ -221,9 +222,7 @@ def create_gblinear_est(params):
     return xgb.XGBoostRegressor(**xgb_params_all)
 
 
-def validate(params):
-    params = init_params(params)
-    
+def validate(params):    
     transf_type = params['transf_type']
     
     if transf_type == 'drop':
