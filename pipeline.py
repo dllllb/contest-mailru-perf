@@ -297,4 +297,4 @@ def test_validate():
         'n_fodls': 3,
         'transf_type': 'drop',
     }
-    print(validate(params))
+    print(validate(init_params(params)))
