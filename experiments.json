@@ -169,7 +169,6 @@
         "est_type": "gp",
         "transf_type": "dr+inp+sc+pca",
         "n_pca_components": 30,
-        "theta0": 2.0
     },
     {
         "MAPE-mean": 0.0841074580969,
@@ -256,7 +255,6 @@
         "per_group_regr": true,
         "est_type": "ridge",
         "transf_type": "dr+inp+sc",
-        "alpha": 10
     },
     {
         "MAPE-mean": 0.296550976215,
@@ -278,8 +276,6 @@
         "per_group_regr": true,
         "est_type": "gblinear",
         "transf_type": "dr+inp+sc",
-        "lambda": 0.5,
-        "alpha": 0.5
     },
     {
         "MAPE-mean": 0.120320752517,
