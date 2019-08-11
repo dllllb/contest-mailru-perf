@@ -225,7 +225,6 @@ def create_xgb_est(params):
     elif objective == 'poisson':
         xgb_params['objective'] = 'count:poisson'
 
-
     class XGBC(XGBRegressor):
         def fit(self, x, y, **kwargs):
             f_train, f_val, t_train, t_val = train_test_split(x, y, test_size=params['es_share'])
